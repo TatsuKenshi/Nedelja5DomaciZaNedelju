@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="dataEntry">
+      <h1>My To Do List</h1>
+      <form class="todoForm">
+        <input type="text" placeholder="What's the task?" class="inputField" />
+        <br />
+        <p>Is it done?</p>
+        <input type="radio" id="done" name="todoStatus" value="done" />
+        <label for="done">Done</label>
+        <input type="radio" id="notDone" name="todoStatus" value="notDone" />
+        <label for="notDone">Not Done</label>
+        <br />
+        <br />
+        <button type="submit" class="submitBtn">Submit</button>
+      </form>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="todoList"></div>
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
